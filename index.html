@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RSS Team 7</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RSS Team 7 — MIT 6.4200 Robotics: Science and Systems">
+  <meta property="og:title" content="RSS Team 7">
+  <meta property="og:description" content="RSS Team 7 — MIT 6.4200 Robotics: Science and Systems">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./theme.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<a href="#main-content" class="skip-link">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="./" class="nav-brand">RSS Team 7</a>
+    <div class="nav-links">
+      <a href="./about/" data-robot="🤖">About</a>
+      <a href="./labs/" data-robot="🦾"><i class="fa fa-folder"></i> Labs</a>
+      <a href="./videos/" data-robot="🛸"><i class="fa fa-camera"></i> Videos</a>
+      <a href="https://github.com/rss2026-7/website2022" data-robot="🔧"><i class="fa fa-github"></i> Github</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+  </div>
+</nav>
+
+
+<!-- Mobile Sidebar -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<nav class="mobile-sidebar" aria-label="Mobile navigation" id="mobileSidebar">
+  <a href="./about/">About</a>
+  <a href="./labs/">Labs</a>
+  <a href="./videos/">Videos</a>
+  <a href="https://github.com/rss2026-7/website2022">Github</a>
+</nav>
+
+
+<!-- Intro / Loading Screen -->
+<div class="intro-screen" id="introScreen">
+  <div class="intro-road"></div>
+  <div class="intro-car">
+    <div class="car-body">
+      <div class="car-cabin"></div>
+      <div class="car-wheel car-wheel-front"></div>
+      <div class="car-wheel car-wheel-back"></div>
+      <div class="car-exhaust"></div>
+      <div class="car-exhaust"></div>
+      <div class="car-exhaust"></div>
+    </div>
+    <div class="car-base"></div>
+  </div>
+  <div class="intro-text">RSS Team 7</div>
+  <div class="skip-hint">Click to skip</div>
+</div>
+
+<!-- Hero Header -->
+<header class="hero" style="background-image: url('./img/mit.jpg');">
+  <div class="hero-content">
+    <h1>Team 7!</h1>
+    <p>Innovation starts somewhere, so why not let it start here?</p>
+    <div class="hero-cta">
+      <a href="#about" class="hero-btn">Meet the Team</a>
+      <a href="./labs/" class="hero-btn">See Our Labs</a>
+    </div>
+  </div>
+</header>
+
+<!-- Mission Blurb -->
+<section class="section" id="main-content" style="text-align:center; padding-bottom:0;">
+  <h2 class="section-title">Who We Are</h2>
+  <p style="max-width:700px; margin:0 auto; color:var(--text-muted); font-size:1.05rem; line-height:1.8;">
+    We're a team of MIT students in MIT 6.4200 — Robotics: Science and Systems (Spring 2026), building autonomous robots that perceive, plan, and act in the real world. Follow our journey from sensors to self-driving.
+  </p>
+</section>
+
+<!-- Team Members -->
+<section class="section" id="about">
+  <h2 class="section-title">Meet the Team</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <img class="headshot" src="./img/diego.jpg" alt="Photo of Diego Contreras">
+      <h4>Diego Contreras</h4>
+      <p class="email">diegoctr@mit.edu</p>
+      <p class="bio">Went from programming drones to programming ground robots. Somehow harder.</p>
+    </div>
+    <div class="team-card">
+      <img class="headshot" src="./img/headshot.jpeg" alt="Photo of Nathaniel Morgan">
+      <h4>Nathaniel Morgan</h4>
+      <p class="email">nmorgan@mit.edu</p>
+      <p class="bio">Let's make self driving cars</p>
+    </div>
+    <div class="team-card">
+      <div class="placeholder-headshot" role="img" aria-label="Placeholder photo for Team Member 3"><i class="fa fa-user"></i></div>
+      <h4>Team Member 3</h4>
+      <p class="email">member3@mit.edu</p>
+      <p class="bio">Add your bio here</p>
+    </div>
+    <div class="team-card">
+      <div class="placeholder-headshot" role="img" aria-label="Placeholder photo for Team Member 4"><i class="fa fa-user"></i></div>
+      <h4>Team Member 4</h4>
+      <p class="email">member4@mit.edu</p>
+      <p class="bio">Add your bio here</p>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Lab -->
+<section class="section" style="text-align:center;">
+  <h2 class="section-title">Latest Lab</h2>
+  <div class="labs-grid" style="max-width:480px; margin:0 auto;">
+    <div class="lab-card">
+      <img src="./img/mit.jpg" alt="Lab 0: Example Lab thumbnail">
+      <div class="lab-card-body">
+        <h3>Lab 0: Example Lab</h3>
+        <p>Example of rendering html and embedding your presentation and report pdf.</p>
+        <a href="./labs/example_lab/" class="btn"><i class="fa fa-info-circle"></i> More Info</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-nav">
+    <a href="#" class="btn"><i class="fa fa-arrow-up"></i> Back to top</a>
+  </div>
+  <p class="footer-info">RSS Team 7 — MIT 6.4200 — Robotics: Science and Systems — Spring 2026</p>
+  <p class="credit">Built with HTML, CSS &amp; JS</p>
+</footer>
+
+
+<!-- Theme Switcher -->
+<div class="theme-panel" id="themePanel">
+  <h4>Accent Color</h4>
+  <div class="color-swatches">
+    <div class="color-swatch" data-color="red" title="Red"></div>
+    <div class="color-swatch" data-color="blue" title="Blue"></div>
+    <div class="color-swatch" data-color="teal" title="Teal"></div>
+    <div class="color-swatch" data-color="purple" title="Purple"></div>
+    <div class="color-swatch" data-color="orange" title="Orange"></div>
+  </div>
+  <div class="dark-toggle">
+    <span>Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="darkModeCheckbox" aria-label="Toggle dark mode">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+
+</body>
+</html>

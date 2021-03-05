@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RSS Team 7</title>
+  {{HEAD}}
+</head>
+
+<body>
+
+<!-- Navigation -->
+{{NAV}}
+
+<!-- Mobile Sidebar -->
+{{SIDEBAR}}
+
+<!-- Intro / Loading Screen -->
+<div class="intro-screen" id="introScreen">
+  <div class="intro-road"></div>
+  <div class="intro-car">
+    <div class="car-body">
+      <div class="car-cabin"></div>
+      <div class="car-wheel car-wheel-front"></div>
+      <div class="car-wheel car-wheel-back"></div>
+      <div class="car-exhaust"></div>
+      <div class="car-exhaust"></div>
+      <div class="car-exhaust"></div>
+    </div>
+    <div class="car-base"></div>
+  </div>
+  <div class="intro-text">{{TEAM_NAME}}</div>
+  <div class="skip-hint">Click to skip</div>
+</div>
+
+<!-- Hero Header -->
+<header class="hero" style="background-image: url('{{ROOT}}/{{HERO_IMAGE}}');">
+  <div class="hero-content">
+    <h1>Team 7!</h1>
+    <p>{{TAGLINE}}</p>
+    <div class="hero-cta">
+      <a href="#about" class="hero-btn">Meet the Team</a>
+      <a href="{{ROOT}}/labs/" class="hero-btn">See Our Labs</a>
+    </div>
+  </div>
+</header>
+
+<!-- Mission Blurb -->
+<section class="section" id="main-content" style="text-align:center; padding-bottom:0;">
+  <h2 class="section-title">Who We Are</h2>
+  <p style="max-width:700px; margin:0 auto; color:var(--text-muted); font-size:1.05rem; line-height:1.8;">
+    We're a team of MIT students in {{COURSE}} ({{SEMESTER}}), building autonomous robots that perceive, plan, and act in the real world. Follow our journey from sensors to self-driving.
+  </p>
+</section>
+
+<!-- Team Members -->
+<section class="section" id="about">
+  <h2 class="section-title">Meet the Team</h2>
+  <div class="team-grid">
+{{TEAM_CARDS}}
+  </div>
+</section>
+
+<!-- Latest Lab -->
+<section class="section" style="text-align:center;">
+  <h2 class="section-title">Latest Lab</h2>
+{{LATEST_LAB}}
+</section>
+
+<!-- Footer -->
+{{FOOTER}}
+
+<!-- Theme Switcher -->
+{{THEME_SWITCHER}}
+
+</body>
+</html>

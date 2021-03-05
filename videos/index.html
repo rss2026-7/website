@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RSS Team 7 - Videos</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RSS Team 7 — MIT 6.4200 Robotics: Science and Systems">
+  <meta property="og:title" content="RSS Team 7">
+  <meta property="og:description" content="RSS Team 7 — MIT 6.4200 Robotics: Science and Systems">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../theme.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<a href="#main-content" class="skip-link">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../" class="nav-brand">RSS Team 7</a>
+    <div class="nav-links">
+      <a href="../about/" data-robot="🤖">About</a>
+      <a href="../labs/" data-robot="🦾"><i class="fa fa-folder"></i> Labs</a>
+      <a href="../videos/" data-robot="🛸"><i class="fa fa-camera"></i> Videos</a>
+      <a href="https://github.com/rss2026-7/website2022" data-robot="🔧"><i class="fa fa-github"></i> Github</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+  </div>
+</nav>
+
+
+<!-- Mobile Sidebar -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<nav class="mobile-sidebar" aria-label="Mobile navigation" id="mobileSidebar">
+  <a href="../about/">About</a>
+  <a href="../labs/">Labs</a>
+  <a href="../videos/">Videos</a>
+  <a href="https://github.com/rss2026-7/website2022">Github</a>
+</nav>
+
+
+<!-- Hero Header -->
+<header class="hero" style="background-image: url('../img/mit.jpg');">
+  <div class="hero-content">
+    <h1>Videos &amp; Media</h1>
+    <p>Recordings and demos from our robotics work</p>
+  </div>
+</header>
+
+<!-- Video Grid -->
+<section class="section" id="main-content">
+  <h2 class="section-title">Our Videos</h2>
+  <div class="labs-grid">
+    <!-- Coming Soon placeholder -->
+    <div class="lab-card coming-soon" style="text-align:center; padding:40px 24px;">
+      <i class="fa fa-video-camera" style="font-size:3rem; color:var(--accent); margin-bottom:16px; display:block;"></i>
+      <h3>Videos coming soon!</h3>
+      <p>Check back after our first lab.</p>
+    </div>
+
+    <!-- HOW TO ADD A VIDEO:
+    Copy this block and paste below. Replace the YouTube URL and title.
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Video title"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="width:100%; aspect-ratio:16/9;"></iframe>
+      <div class="video-card-body">
+        <h3>Your Video Title</h3>
+        <p>Short description of the video.</p>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-nav">
+    <a href="#" class="btn"><i class="fa fa-arrow-up"></i> Back to top</a>
+  </div>
+  <p class="footer-info">RSS Team 7 — MIT 6.4200 — Robotics: Science and Systems — Spring 2026</p>
+  <p class="credit">Built with HTML, CSS &amp; JS</p>
+</footer>
+
+
+<!-- Theme Switcher -->
+<div class="theme-panel" id="themePanel">
+  <h4>Accent Color</h4>
+  <div class="color-swatches">
+    <div class="color-swatch" data-color="red" title="Red"></div>
+    <div class="color-swatch" data-color="blue" title="Blue"></div>
+    <div class="color-swatch" data-color="teal" title="Teal"></div>
+    <div class="color-swatch" data-color="purple" title="Purple"></div>
+    <div class="color-swatch" data-color="orange" title="Orange"></div>
+  </div>
+  <div class="dark-toggle">
+    <span>Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="darkModeCheckbox" aria-label="Toggle dark mode">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  HOW TO USE THIS TEMPLATE — Step-by-step guide
+  ============================================================
+
+  1. SET THE LAB TITLE
+     - Search this file for "Lab X: Your Lab Title" (appears in <title> and <h1>)
+     - Replace both with your actual lab title, e.g. "Lab 3: Wall Following"
+
+  2. EMBED GOOGLE SLIDES
+     a) Open your Google Slides presentation
+     b) Go to File > Share > Publish to Web
+        (Google help: https://support.google.com/docs/answer/183965)
+     c) Click the "Embed" tab
+     d) Click "Publish", then copy the URL from the src="..." attribute
+     e) Replace YOUR_EMBED_ID in the <iframe> below with that URL
+     f) Also update the sharing link in the <a> tag — replace YOUR_PRESENTATION_ID
+        with the ID from your slides URL (the long string between /d/ and /edit)
+
+  3. LINK / EMBED THE PDF
+     a) Place your PDF in the project (e.g. latex_report/lab3_report.pdf)
+     b) Replace "your_report.pdf" in both the <a> download link and the
+        <object>/<embed> tags with the correct filename
+
+  4. ADD OPTIONAL HTML CONTENT (optional)
+     - Below the PDF embed there is a section marked for additional content
+     - You can write HTML directly here, or use a Markdown-to-HTML converter
+       and paste the output
+     - This is useful for adding extra figures, tables, or discussion
+
+  5. REGISTER THE LAB
+     - Add an entry to _src/labs/_registry.json so it appears on the labs page
+     - Run: python3 build.py
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <!-- EDIT THIS: Replace "Lab X: Your Lab Title" with the actual lab title -->
+  <title>RSS Team 7 - Lab X: Your Lab Title</title>
+  {{HEAD}}
+  <!-- MathJax for LaTeX rendering -->
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']],displayMath: [['$$','$$']],skipTags: ["script","noscript","style","textarea","code"]},TeX: {equationNumbers: {autoNumber: "AMS"}}});</script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+{{NAV}}
+
+<!-- Mobile Sidebar -->
+{{SIDEBAR}}
+
+<!-- Hero Header -->
+<header class="hero" style="background-image: url('{{ROOT}}/img/mit.jpg');">
+  <div class="hero-content">
+    <!-- EDIT THIS: Replace with your lab title -->
+    <h1>Lab X: Your Lab Title</h1>
+  </div>
+</header>
+
+<!-- Lab Report Content -->
+<div class="lab-content" id="main-content">
+
+  <h1>Presentation and Lab Report</h1>
+
+  <!-- EDIT THIS: Replace the Google Slides sharing URL with your own -->
+  <p><a href="https://docs.google.com/presentation/d/YOUR_PRESENTATION_ID/edit?usp=sharing" class="btn-outline btn"><i class="fa fa-external-link"></i> Presentation Slides</a></p>
+
+  <!-- EDIT THIS: Replace the PDF path with the path to your lab report -->
+  <p><a href="{{ROOT}}/latex_report/your_report.pdf" download class="btn-outline btn"><i class="fa fa-download"></i> Download Lab Report</a></p>
+
+  <!-- EDIT THIS: Replace the Google Slides embed URL with your own.
+       To get the embed URL: Open your slides > File > Share > Publish to Web > Embed tab > Copy the src URL -->
+  <iframe src="https://docs.google.com/presentation/d/e/YOUR_EMBED_ID/embed?start=true&loop=true&delayms=3000" frameborder="0" width="95%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="display:block; margin:20px auto;"></iframe>
+
+  <!-- EDIT THIS: Replace the PDF path with the path to your lab report PDF -->
+  <object data="{{ROOT}}/latex_report/your_report.pdf" type="application/pdf" width="100%" height="935px" style="display:block; margin:20px auto;">
+    <embed src="{{ROOT}}/latex_report/your_report.pdf">
+    </embed>
+  </object>
+
+  <!-- EDIT THIS: Add any additional HTML content for your lab report below.
+       You can write HTML directly, or use md_make.py to convert Markdown to HTML
+       and paste the output here. This section is optional. -->
+
+</div>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-nav">
+    <a href="../" class="btn"><i class="fa fa-arrow-left"></i> Lab Home</a>
+    <a href="#main-content" class="btn"><i class="fa fa-arrow-up"></i> Back to Top</a>
+  </div>
+  <p class="footer-info">{{TEAM_NAME}} — {{COURSE}} — {{SEMESTER}}</p>
+  <p class="credit">Built with HTML, CSS &amp; JS</p>
+</footer>
+
+<!-- Theme Switcher -->
+{{THEME_SWITCHER}}
+
+</body>
+</html>

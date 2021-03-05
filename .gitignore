@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Testing / benchmarks
+.pytest_cache/
+.benchmarks/
+
+# OS files
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+
+# Claude Code
+.claude/
+CLAUDE.md
+CHECKLIST.md
+
+tests/

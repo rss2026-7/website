@@ -1,0 +1,15 @@
+{
+  "team_name": "RSS Team 7",
+  "team_number": 7,
+  "course": "MIT 6.4200 — Robotics: Science and Systems",
+  "semester": "Spring 2026",
+  "github_url": "https://github.com/rss2026-7/website2022",
+  "tagline": "Innovation starts somewhere, so why not let it start here?",
+  "hero_image": "img/mit.jpg",
+  "members": [
+    {"name": "Diego Contreras", "email": "diegoctr@mit.edu", "photo": "img/diego.jpg", "bio": "Went from programming drones to programming ground robots. Somehow harder."},
+    {"name": "Nathaniel Morgan", "email": "nmorgan@mit.edu", "photo": "img/headshot.jpeg", "bio": "Let's make self driving cars"},
+    {"name": "Team Member 3", "email": "member3@mit.edu", "photo": "", "bio": "Add your bio here"},
+    {"name": "Team Member 4", "email": "member4@mit.edu", "photo": "", "bio": "Add your bio here"}
+  ]
+}
