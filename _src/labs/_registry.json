@@ -4,5 +4,11 @@
     "title": "Lab 0: Example Lab",
     "description": "Example of rendering html and embedding your presentation and report pdf.",
     "thumbnail": "img/mit.jpg"
+  },
+  {
+    "number": "lab3",
+    "title": "Lab 3: Wall Following",
+    "description": "LiDAR-powered wall following with RANSAC line detection and an emergency braking safety controller on an autonomous racecar.",
+    "thumbnail": "img/mit.jpg"
   }
 ]
