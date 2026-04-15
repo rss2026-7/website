@@ -22,5 +22,11 @@
     "title": "Lab 5: Localization",
     "description": "Monte Carlo localization using particle filters for autonomous robot pose estimation.",
     "thumbnail": "img/mit.jpg"
+  },
+  {
+    "number": "lab6",
+    "title": "Lab 6: Path Planning",
+    "description": "Path planning algorithms for autonomous navigation in structured environments.",
+    "thumbnail": "img/mit.jpg"
   }
 ]
